@@ -1,0 +1,45 @@
+{
+  "name": "building-an-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:frontend": "webpack-dev-server --mode=development",
+    "serve:backend": "pipenv run flask run",
+    "webpack": "webpack -p",
+    "build": "pipenv install; npm i; webpack -p",
+    "serve:react": "webpack-dev-server",
+    "serve:flask": "pipenv run flask run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^3.5.3",
+    "dotenv-webpack": "^4.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "babel": "^6.23.0",
+    "bootstrap": "^4.5.3",
+    "bulma": "^0.9.1",
+    "file-loader": "^6.2.0",
+    "react": "^16.13.1",
+    "react-burger-menu": "^3.0.1",
+    "react-dom": "^16.13.1",
+    "react-player": "^2.7.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
+  }
+}
